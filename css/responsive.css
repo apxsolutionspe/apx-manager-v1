@@ -1,0 +1,232 @@
+@media (max-width: 1199px) {
+  .auth-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
+  }
+
+  .auth-visual,
+  .auth-card {
+    padding: 36px;
+  }
+
+  .clientes-layout {
+    grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+  }
+
+  .dashboard-grid,
+  .dashboard-grid--reports,
+  .reports-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .customers-summary,
+  .services-summary,
+  .orders-summary,
+  .equipment-summary,
+  .support-summary,
+  .sales-summary,
+  .expenses-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .auth-layout {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .auth-visual {
+    min-height: 300px;
+    align-items: center;
+  }
+
+  .auth-visual h2 {
+    max-width: 680px;
+  }
+
+  .clientes-layout,
+  .dashboard-tables,
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-filter-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .module-view--ventas .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--clientes .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--servicios .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--ordenes .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--equipos .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--soporte .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .module-view--gastos .clientes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .customers-form-card,
+  .services-form-card,
+  .orders-form-card,
+  .equipment-form-card,
+  .support-form-card,
+  .sales-form-card,
+  .expenses-form-card {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: min(82vw, 288px);
+    padding: 20px 16px;
+  }
+
+  .app-header {
+    padding: 14px 20px;
+  }
+
+  .main-content {
+    padding: calc(var(--header-height) + 24px) 20px 24px;
+  }
+
+  .dashboard-grid,
+  .dashboard-grid--reports,
+  .reports-summary,
+  .customers-summary,
+  .services-summary,
+  .orders-summary,
+  .equipment-summary,
+  .support-summary,
+  .sales-summary,
+  .expenses-summary {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .reports-filter-card {
+    grid-template-columns: 1fr;
+  }
+
+  .data-table {
+    min-width: 760px;
+  }
+
+  .data-table--wide {
+    min-width: 980px;
+  }
+
+  .data-table--compact {
+    min-width: 560px;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-screen {
+    padding: 18px;
+  }
+
+  .auth-layout {
+    border-radius: 24px;
+  }
+
+  .auth-visual {
+    display: none;
+  }
+
+  .auth-card {
+    padding: 28px;
+  }
+
+  .auth-form__row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel__header--stack {
+    gap: 14px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .filters-row {
+    width: 100%;
+    justify-content: stretch;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-card {
+    padding: 22px;
+  }
+
+  .auth-brand__logo {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+  }
+
+  .auth-card__intro h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-screen {
+    padding: 18px;
+  }
+
+  .login-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .login-brand__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .login-card__intro h2 {
+    font-size: 1.55rem;
+  }
+
+  .main-content {
+    padding: calc(var(--header-height) + 20px) 14px 20px;
+  }
+
+  .cliente-form,
+  .clientes-table-panel,
+  .dashboard-table-panel,
+  .report-filters {
+    padding: 16px;
+  }
+}

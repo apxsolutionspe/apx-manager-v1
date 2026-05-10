@@ -1,0 +1,15 @@
+{
+  "name": "apx-manager",
+  "version": "1.0.0",
+  "description": "Sistema interno APX Manager para gestion empresarial.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test js/**/*.test.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
